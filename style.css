@@ -1,0 +1,139 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: hsl(235, 18%, 26%);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 600px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.signUp{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+h1{
+    font-weight: 790;
+    font-size: 2.23rem;
+    padding-block: 6px;
+    letter-spacing: 0.6px;
+}
+.signUp .desc{
+    padding-block: 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.para{
+    display: flex;
+    gap: 17px;
+    margin-block: 10px;
+}
+.para p{
+    font-size: 0.7rem;
+}
+label{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-block: 3px;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+}
+.invalid{
+    display: none;
+    font-size: .7rem;
+    margin-block: 3px;
+    color: hsl(4, 100%, 67%);
+}
+input{
+    padding: 7px;
+    border-style: none;
+    border: 0.1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+input:active{
+    border: 0.3px solid rgb(73, 73, 73);
+}
+.btn{
+    padding-block: 15px;
+    font-weight: bold;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+.btn:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0px 4px 17px hsl(4, 100%, 67%);
+}
+.confirmed{
+    display: none;
+    text-align: left;
+}
+.confirmed-icon{
+    width: 2.4rem;
+}
+.bgpic img{
+    width: 100%;
+}
+@media (max-width: 760px) {
+    body{
+        display: initial;
+        /* flex-direction: row; */
+        /* line-height: 1.4; */
+        
+    }
+    .container{
+        width: 100%;
+        height: initial;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    .confirmed{
+        /* display: block; */
+        padding: initial;
+    }
+    .signUp{
+        width: 100%;
+
+    }
+    .bgpic{
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
