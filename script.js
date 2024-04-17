@@ -3,7 +3,8 @@ let subscribeBtn = document.getElementById("subscribe"),
     input = document.getElementById("email"),
     invalidEmail = document.querySelector(".invalid"),
     bgPic = document.querySelector(".bgpic"),
-    confirmed = document.querySelector(".confirmed");
+    confirmed = document.querySelector(".confirmed"),
+    dismissBtn = document.getElementById("dismissBtn");
 
 
 subscribeBtn.addEventListener("click" , (e) => {
@@ -20,4 +21,10 @@ subscribeBtn.addEventListener("click" , (e) => {
     invalidEmail.style.display = "block"
   }
 
+})
+dismissBtn.addEventListener("click", (e)=>{
+  confirmed.style.display = "none";
+  signUp.style.display = "block";
+  bgPic.style.display = "block";
+  input.value = "";
 })
